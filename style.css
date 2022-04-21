@@ -1,0 +1,31 @@
+@import 'reset.css';
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1em 2em;
+}
+.title {
+  margin: 1em auto;
+  font-size: 1.5rem;
+}
+.initial-sound {
+  display: inline-block;
+  list-style: none;
+  padding: 0.5em;
+  border: 1px solid rgba(0, 0, 0, 0.5);
+}
+.initial-sound:hover {
+  background: rgba(0, 0, 0, 0.1);
+  font-weight: bold;
+}
+.textInput {
+  margin: 1em auto;
+  width: 100%;
+  height: 50vh;
+}
+.btn {
+  padding: 0.5em;
+  width: 10rem;
+}
