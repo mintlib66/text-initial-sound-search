@@ -28,8 +28,12 @@ $(function () {
     $('.setting-box').append(`<li class='initial-sound'>${item.sound}</li>`)
     // console.log(`${item.sound}: ${item.start.charCodeAt(0) + 587}`)
   })
+  $('.information').text(
+    `*사용방법: 초성 글자 버튼 클릭 후, 검색을 원하는 텍스트를 아래
+    입력칸에 적은 후, 검색 버튼을 누릅니다.`
+  )
   $('.textInput').val(
-    '가까나다따라마바빠사싸아자짜차카타파하 데이터 속성은 순 HTML 속성이기 때문에 CSS에서도 접근할 수 있다는 것에 주목하세요.'
+    `가까나다따라마바빠사싸아자짜차카타파하\n데이터 속성은 순 HTML 속성이기 때문에 CSS에서도 접근할 수 있다는 것에 주목하세요.`
   )
 
   // 버튼 선택상태 확인
