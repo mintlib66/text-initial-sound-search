@@ -27,6 +27,16 @@ $(function () {
   })
 
   // 버튼 선택상태 확인
+  $('.setting-box').on('click', e => {
+    e.target.classList.toggle('clicked')
+    const selectItem = e.target.innerText
+    initialSounds.map(item => {
+      if (item.sound === selectItem) {
+        item.select = item.select === false ? true : false
+        console.log(e.target.innerText, item)
+      }
+    })
+  })
 
   // 검사 버튼 클릭 이벤트 핸들러
 

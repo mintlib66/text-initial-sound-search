@@ -20,6 +20,10 @@
   background: rgba(0, 0, 0, 0.1);
   font-weight: bold;
 }
+.initial-sound.clicked {
+  background: rgba(0, 0, 0, 0.2);
+  font-weight: bold;
+}
 .textInput {
   margin: 1em auto;
   width: 100%;
