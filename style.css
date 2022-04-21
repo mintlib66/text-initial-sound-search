@@ -24,10 +24,19 @@
   background: rgba(0, 0, 0, 0.2);
   font-weight: bold;
 }
-.textInput {
+.textInput,
+.textResult {
   margin: 1em auto;
   width: 100%;
   height: 50vh;
+}
+.textResult {
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  padding: 1em;
+}
+.textResult strong {
+  font-weight: bold;
+  background: yellow;
 }
 .btn {
   padding: 0.5em;
