@@ -1,5 +1,9 @@
 @import 'reset.css';
-
+:root {
+  --main-color: rgb(138, 223, 218);
+  --sub-color: rgba(138, 223, 217, 0.5);
+  --line-color: rgb(0, 167, 158);
+}
 .wrapper {
   margin: 2em auto 1em;
   display: flex;
@@ -8,6 +12,9 @@
 }
 .title {
   font-size: 1.5rem;
+  font-weight: bold;
+  letter-spacing: -1px;
+  color: var(--line-color);
 }
 .main-box {
   display: flex;
@@ -20,9 +27,9 @@
   padding: 1em 0;
   width: 100%;
   font-size: 0.8rem;
-  color: rgba(0, 0, 0, 0.8);
+  color: rgba(0, 0, 0, 0.6);
   text-align: center;
-  background: rgba(0, 0, 0, 0.1);
+  background: var(--sub-color);
 }
 .setting-box {
   width: 100%;
@@ -31,35 +38,59 @@
   display: inline-block;
   list-style: none;
   padding: 0.5em;
-  border: 1px solid rgba(0, 0, 0, 0.5);
+  border: 1px solid var(--main-color);
+  color: rgba(0, 0, 0, 0.7);
 }
 .initial-sound:hover {
-  background: rgba(0, 0, 0, 0.1);
+  background: var(--sub-color);
   font-weight: bold;
+  cursor: pointer;
 }
 .initial-sound.clicked {
-  background: rgba(0, 0, 0, 0.2);
+  background: var(--main-color);
   font-weight: bold;
+  color: #000;
 }
 .textInput,
 .textResult {
-  margin: 1em auto;
+  margin: 1em auto 0.5em;
   width: 100%;
   min-width: 10em;
   height: 50vh;
 }
 .textInput {
   resize: none;
+  border: 1px solid var(--line-color);
+}
+.textInput::placeholder {
+  color: var(--line-color);
 }
 .textResult {
-  border: 1px solid rgba(0, 0, 0, 0.5);
+  border: 1px solid var(--line-color);
   padding: 1em;
 }
 .textResult strong {
   font-weight: bold;
-  background: yellow;
+  background: var(--main-color);
+}
+.textSize {
+  width: 100%;
+  font-size: small;
+  color: var(--line-color);
+  text-align: right;
 }
 .btn {
   padding: 0.5em;
   width: 10rem;
+  border: 2px solid var(--main-color);
+  background: #fff;
+  color: var(--main-color);
+  border-radius: 1em;
+  font-weight: bold;
+}
+.btn:hover {
+  border: 2px solid var(--main-color);
+  background: var(--main-color);
+  color: #fff;
+  cursor: pointer;
 }

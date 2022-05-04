@@ -33,7 +33,9 @@ $(function () {
       <textarea
       class="textInput"
       placeholder="검색할 텍스트를 입력해주세요."
-      ></textarea>`
+      ></textarea>
+      <p class="textSize"><span class="text-size">0</span>자</p>
+      `
     )
 
     //레이아웃, 초기값 설정
@@ -47,6 +49,11 @@ $(function () {
     // $('.textInput').val(
     //   `가까나다따라마바빠사싸아자짜차카타파하\n데이터 속성은 순 HTML 속성이기 때문에 CSS에서도 접근할 수 있다는 것에 주목하세요.`
     // )
+    //글자 수 세기
+    $('.textInput').on('input', e => {
+      $('.text-size').text($('.textInput').val().length)
+    })
+
     // 버튼 선택상태 확인
     $('.setting-box').on('click', e => {
       e.target.classList.toggle('clicked')
